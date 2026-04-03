@@ -1,0 +1,54 @@
+--- Single Inheritance ---
+Name: Ali, Age: 20
+Name: Ali, Age: 20, Grade: A
+
+--- Multilevel Inheritance ---
+Animal is eating
+Dog is barking
+BabyDog is weeping
+
+--- Hierarchical Inheritance ---
+This is a vehicle
+This is a Car
+This is a vehicle
+This is a Bike
+
+--- Method Overriding ---
+Rectangle Area: 15
+Circle Area: 153.86
+
+--- Operator Overloading ---
+Value: 30
+
+--- Polymorphism Using Loop ---
+Dog says: Woof
+Cat says: Meow
+Cow says: Moo
+
+--- Instance Method ---
+Employee: Ahmed, Salary: 50000
+
+--- Class Method ---
+Company name changed to: NextGen Solutions
+
+--- Static Method ---
+Add: 9
+Multiply: 20
+
+--- Magic Method __str__ ---
+Book: Python Basics, Price: 500
+
+--- Magic Method __len__ ---
+Total songs: 3
+
+--- Magic Method __repr__ ---
+Product(name=Laptop, price=75000)
+
+--- BankAccount System ---
+[Savings] Account Owner: Ali, Balance: 10000, Interest Rate: 5%
+[Current] Account Owner: Sara, Balance: 20000, Overdraft Limit: 5000
+Combined Account Balance: 30000
+Bank name set to: HBL Pakistan
+IFSC HDFC0001234 is Valid
+IFSC 123 is Invalid
+\n1. Method Overriding vs Method Overloading:\n   - Overriding  → Child class redefines parent's method (same name, same params).\n   - Overloading → Same method name, different parameters. Python does NOT support\n                   traditional overloading; we use default args or *args instead.\n\n2. MRO (Method Resolution Order):\n   - The order Python follows to look up methods in inheritance.\n   - Python uses C3 Linearization algorithm.\n   - Check using: ClassName.__mro__ or help(ClassName)\n   - Example: BabyDog → Dog → Animal → object\n\n3. Instance vs Class vs Static Method:\n   - Instance Method : works on object data, takes 'self' as first param.\n   - Class Method    : works on class data, takes 'cls', uses @classmethod.\n   - Static Method   : no access to class or object, uses @staticmethod.\n\n4. If child does NOT override parent method:\n   - Python automatically uses the parent class method (inherited as-is).\n\n5. RHS Object in Operator Overloading:\n   - In n1 + n2, 
